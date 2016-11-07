@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div class="viewport"></div>
+
+<div id="GUI">
+    <p class="cText">Segments</p>
+    <select class="cSelector" id="segments">
+        <option value="32">32</option>
+        <option selected value="64">64</option>
+        <option value="128">128</option>
+    </select>
+
+    <br><br>
+
+    <p class="cText">Size</p>
+    <select class="cSelector" id="size">
+        <option value="256">256</option>
+        <option value="512">512</option>
+        <option selected value="1024">1024</option>
+        <option value="2048">2048</option>
+        <option value="4096">4096</option>
+        <option value="8192">8192</option>
+    </select>
+
+    <br><br>
+
+    <p class="cText">Magnitude</p>
+    <select class="cSelector" id="magnitude">
+        <option value="128">128</option>
+        <option value="256">256</option>
+        <option value="512">512</option>
+        <option selected value="1024">1024</option>
+        <option value="2048">2048</option>
+        <option value="4096">4096</option>
+        <option value="8192">8192</option>
+    </select>
+
+    <br><br>
+
+    <p class="cText">Shadows</p>
+    <form>
+        <input class="cCheckBox" type="checkbox" id="shadows" value="true"> On<br>
+    </form>
+
+    <br>
+
+    <p class="cText">SSAO</p>
+    <form>
+        <input class="cCheckBox" type="checkbox" id="ssao" value="true"> On<br>
+    </form>
+
+    <br>
+
+    <p class="cText">Seed</p>
+    <textarea class="cTextArea" rows="1" cols="9" id="seed">1234567890
+    </textarea>
+
+    <br><br>
+
+    <button class="cButton" onclick="main()">Generate</button>
+
+    <br><br>
+
+    <p class="cText">Controls:<br>
+        W, A, S, D
+        <br>
+        Space
+        <br>
+        Shift</p>
+
+</div>
+
+<script src="js/external/three.min.js"></script>
+<script src="js/external/MersenneTwister.js"></script>
+<script src="js/external/PointerLockControls.js"></script>
+<script src="js/external/SSAOShader.js"></script>
+<script src="js/external/CopyShader.js"></script>
+<script src="js/external/EffectComposer.js"></script>
+<script src="js/external/RenderPass.js"></script>
+<script src="js/external/ShaderPass.js"></script>
+<script src="js/external/MaskPass.js"></script>
+
+<script src="js/cacti.js"></script>
+<script src="js/ssao.js"></script>
+<script src="js/controls.js"></script>
+<script src="js/diamondSquare.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

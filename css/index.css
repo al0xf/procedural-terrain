@@ -1,0 +1,38 @@
+body { margin: 0; }
+body {overflow: hidden;}
+canvas { width: 100%; height: 100% }
+
+#GUI {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    color: darkslategray;
+}
+
+.cButton{
+    color: darkslategray;
+    margin: 0;
+}
+
+.cSelector{
+    color: darkslategray;
+    margin: 0;
+}
+
+.cCheckBox{
+    color: darkslategray;
+    margin: 0;
+}
+
+.cTextArea{
+    color: darkslategray;
+    margin: 0;
+    overflow: hidden;
+    resize: none;
+}
+.cText{
+    color: darkslategray;
+    margin: 0;
+}
